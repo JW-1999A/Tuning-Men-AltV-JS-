@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tuner Tablet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="tablet-container">
+        <div class="tablet-frame">
+            <div class="tablet-header">
+                <span class="time">14:32</span>
+                <span class="battery">85%</span>
+            </div>
+            
+            <div class="tablet-content">
+                <div class="tuning-categories">
+                    <div class="category" data-category="performance">
+                        <i class="icon">🚀</i>
+                        <span>Performance</span>
+                    </div>
+                    <div class="category" data-category="visual">
+                        <i class="icon">🎨</i>
+                        <span>Optik</span>
+                    </div>
+                    <div class="category" data-category="wheels">
+                        <i class="icon">⚙️</i>
+                        <span>Felgen</span>
+                    </div>
+                    <div class="category" data-category="special">
+                        <i class="icon">⭐</i>
+                        <span>Spezial</span>
+                    </div>
+                </div>
+                
+                <div class="tuning-options">
+                    <!-- Wird dynamisch gefüllt -->
+                </div>
+                
+                <div class="tuning-preview">
+                    <div class="vehicle-stats">
+                        <div class="stat">
+                            <span>PS</span>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 60%"></div>
+                            </div>
+                        </div>
+                        <div class="stat">
+                            <span>Handling</span>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 40%"></div>
+                            </div>
+                        </div>
+                        <div class="stat">
+                            <span>Bremsen</span>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tablet-footer">
+                <button class="apply-btn">Anwenden</button>
+                <button class="cancel-btn">Abbrechen</button>
+            </div>
+        </div>
+    </div>
+    <script src="ui.js"></script>
+</body>
+</html>

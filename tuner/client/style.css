@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    background: transparent;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.tablet-container {
+    width: 1024px;
+    height: 768px;
+    perspective: 1000px;
+}
+
+.tablet-frame {
+    width: 100%;
+    height: 100%;
+    background: #1a1a1a;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+}
+
+.tablet-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: #222;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.time, .battery {
+    color: white;
+    font-size: 18px;
+}
+
+.tablet-content {
+    flex: 1;
+    display: flex;
+    gap: 20px;
+}
+
+.tuning-categories {
+    width: 200px;
+    background: #222;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.category {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: all 0.3s;
+}
+
+.category:hover {
+    background: #333;
+}
+
+.category.active {
+    background: #0066cc;
+}
+
+.icon {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.tuning-options {
+    flex: 1;
+    background: #222;
+    border-radius: 10px;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.tuning-option {
+    background: #333;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.option-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.option-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.arrow-btn {
+    background: #444;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 18px;
+}
+
+.arrow-btn:hover {
+    background: #555;
+    transform: scale(1.1);
+}
+
+.level-display {
+    min-width: 50px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+}
+
+.toggle-btn {
+    background: #0066cc;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.toggle-btn:hover {
+    background: #0077ee;
+}
+
+.color-picker input[type="color"] {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.tuning-preview {
+    width: 300px;
+    background: #222;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.vehicle-stats {
+    color: white;
+}
+
+.stat {
+    margin-bottom: 15px;
+}
+
+.stat-bar {
+    width: 100%;
+    height: 10px;
+    background: #333;
+    border-radius: 5px;
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+.stat-fill {
+    height: 100%;
+    background: #0066cc;
+    width: 0;
+    transition: width 0.3s;
+}
+
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #333;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transform: translateX(120%);
+    transition: transform 0.3s;
+}
+
+.notification.show {
+    transform: translateX(0);
+}
+
+.notification.success {
+    background: #4CAF50;
+}
+
+.notification.error {
+    background: #f44336;
+}
+
+.notification-icon {
+    font-size: 20px;
+}
+
+.notification-message {
+    font-size: 14px;
+}
+
+.tablet-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 20px;
+    background: #222;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.apply-btn, .cancel-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+.apply-btn {
+    background: #0066cc;
+    color: white;
+}
+
+.apply-btn:hover {
+    background: #0077ee;
+}
+
+.cancel-btn {
+    background: #444;
+    color: white;
+}
+
+.cancel-btn:hover {
+    background: #555;
+}
